@@ -1,2 +1,2 @@
 # Asaan
-Website of Asaan Contracts Private Limited
+This repository contains the code for Asaan's website.
