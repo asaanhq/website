@@ -1,0 +1,7 @@
+.menuOverlay {
+    background: #fff;
+    color: #111;
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
