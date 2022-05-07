@@ -4,14 +4,18 @@ import { Container } from './components/container'
 
 import './app.css'
 import { Landing } from './sections/landing'
+import { Nav } from './components/nav'
 
 const App: Component = () => {
     return (
-        <Container.Outer>
-            <Container.Inner>
-                <Landing />
-            </Container.Inner>
-        </Container.Outer>
+        <div>
+            <Nav />
+            <Container.Outer>
+                <Container.Inner>
+                    <Landing />
+                </Container.Inner>
+            </Container.Outer>
+        </div>
     )
 }
 

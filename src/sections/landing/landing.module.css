@@ -30,12 +30,13 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    padding-bottom: 9rem;
+    padding-bottom: 10rem;
 }
 
 .tagline {
     font-size: 3rem;
     font-weight: 800;
+    line-height: 1.2;
     width: 20rem;
 }
 

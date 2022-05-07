@@ -1,0 +1,12 @@
+.menuC {
+    background: var(--card-bg);
+    border-radius: 1rem 1rem 0 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 3rem;
+    transition: padding 0.3s;
+}
+
+.menuC:hover {
+    padding: 1rem 3rem 2rem 3rem;
+}
