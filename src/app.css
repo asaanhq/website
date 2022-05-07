@@ -11,11 +11,18 @@
     --neutral-1: #aaa;
     --neutral-2: #999;
     --neutral-3: #555;
+    --neutral-invert-0: #000;
+    --neutral-invert-1: #444;
+    --neutral-invert-2: #666;
+    --neutral-invert-3: #bbb;
     --card-bg: #1f1f21;
 }
 
 html,
 body {
-    position: relative;
+    background: var(--app-bg);
+    color: var(--neutral-0);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 16px;
+    position: relative;
 }

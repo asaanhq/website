@@ -1,7 +1,4 @@
 .outer {
-    background: var(--app-bg);
-    color: var(--neutral-0);
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     width: 100%;

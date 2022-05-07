@@ -11,8 +11,15 @@
 }
 
 .asaan {
-    color: var(--neutral-3);
     font-size: 0.8rem;
     font-weight: 800;
+    padding-left: 1rem;
     text-transform: uppercase;
+}
+
+.header.light .asaan {
+    color: var(--neutral-invert-2);
+}
+.header.dark .asaan {
+    color: var(--neutral-3);
 }
