@@ -15,14 +15,10 @@ const App: Component = () => {
         <div>
             <Header />
             <Nav />
-            <Container.Outer>
-                <Container.Inner>
-                    <Landing />
-                    <Services />
-                    <WhyChooseUs />
-                    <Contact />
-                </Container.Inner>
-            </Container.Outer>
+            <Landing />
+            <Services />
+            <WhyChooseUs />
+            <Contact />
         </div>
     )
 }

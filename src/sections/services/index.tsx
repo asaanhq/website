@@ -1,6 +1,8 @@
 import { onCleanup, onMount } from 'solid-js'
 import { Container } from '../../components/container'
 import { Heading } from '../../components/heading'
+import { SERVICES_SECTION } from '../../constants/headings'
+import { sectionIDs } from '../../constants/ids'
 import { debounce } from '../../utils/debounce'
 
 import styles from './services.module.css'
@@ -86,15 +88,20 @@ export const Services = () => {
     )
 
     return (
-        <div style={{ position: 'relative' }}>
-            <canvas class={styles.canvas} id="services-canvas" />
-            <Container.Section id="services-section" class={styles.container}>
-                <Heading.Section
-                    id="services-heading"
-                    main="Services we provide"
-                    sub="We have expertise in"
-                />
-            </Container.Section>
-        </div>
+        <Container.Outer>
+            <Container.Inner>
+                <canvas class={styles.canvas} id="services-canvas" />
+                <Container.Section
+                    id="services-section"
+                    class={styles.container}
+                >
+                    <Heading.Section
+                        id={sectionIDs.services}
+                        main={SERVICES_SECTION.main}
+                        sub={SERVICES_SECTION.sub}
+                    />
+                </Container.Section>
+            </Container.Inner>
+        </Container.Outer>
     )
 }
