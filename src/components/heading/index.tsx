@@ -7,14 +7,12 @@ export type TSectionHeadingProps = {
 }
 
 const Section = (props: TSectionHeadingProps) => {
-    const { main, sub, id } = props
-
     return (
         <div class={styles.container}>
-            <h1 id={id} class={styles.main}>
-                {main}
+            <h1 id={props.id} class={styles.main}>
+                {props.main}
             </h1>
-            <h4 class={styles.sub}>{sub}</h4>
+            <h4 class={styles.sub}>{props.sub}</h4>
         </div>
     )
 }
