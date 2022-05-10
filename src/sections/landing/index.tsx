@@ -1,4 +1,4 @@
-import { onMount } from 'solid-js'
+import { onCleanup, onMount } from 'solid-js'
 
 import { Container } from '../../components/container'
 
@@ -27,12 +27,16 @@ export const Landing = () => {
     const debouncedSetHeroBox = debounce(setHeroBoxMaxHeight, 60)
 
     onMount(() => {
-        setHeroBoxMaxHeight()
+        debouncedSetHeroBox()
         window.addEventListener('resize', debouncedSetHeroBox)
     })
 
+    onCleanup(() => {
+        window.removeEventListener('resize', debouncedSetHeroBox)
+    })
+
     return (
-        <Container.Section class={styles.hero}>
+        <Container.Section class={styles.hero} id="landing-section">
             <div class={styles.heroBox} ref={heroBoxRef}>
                 <div class={styles.heroMsgC}>
                     <div class={styles.taglineC}>

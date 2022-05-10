@@ -1,0 +1,16 @@
+.container {
+}
+
+.main {
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.sub {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--primary);
+}
