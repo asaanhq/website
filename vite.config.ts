@@ -12,6 +12,10 @@ export default defineConfig({
                         name: 'Open+Sans',
                         styles: 'wght@300;400;600;800',
                     },
+                    {
+                        name: 'Montserrat',
+                        styles: 'wght@200',
+                    },
                 ],
             },
         }),
