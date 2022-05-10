@@ -5,6 +5,7 @@ import AsaanLogoDark from '../../assets/logo/dark/asaan_logo_small.png'
 
 import styles from './header.module.css'
 import { Container } from '../container'
+import { sectionIDs } from '../../constants/ids'
 
 export type THeaderProps = {
     isForLightBg?: boolean
@@ -35,7 +36,9 @@ export const Header = (props: THeaderProps) => {
                     [styles.dark]: !isForLightBg,
                 })}
             >
-                <img src={LogoImg} alt="Asaan's Logo" class={styles.logo} />
+                <a href={`#${sectionIDs.landing}`}>
+                    <img src={LogoImg} alt="Asaan's Logo" class={styles.logo} />
+                </a>
                 <p class={styles.asaan}>Asaan Contracts Private Limited</p>
             </Container.Inner>
         </Container.Outer>
