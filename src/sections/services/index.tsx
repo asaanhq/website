@@ -92,11 +92,11 @@ export const Services = () => {
             <Container.Inner>
                 <canvas class={styles.canvas} id="services-canvas" />
                 <Container.Section
-                    id="services-section"
+                    id={sectionIDs.services}
                     class={styles.container}
                 >
                     <Heading.Section
-                        id={sectionIDs.services}
+                        id={sectionIDs.servicesHeading}
                         main={SERVICES_SECTION.main}
                         sub={SERVICES_SECTION.sub}
                     />

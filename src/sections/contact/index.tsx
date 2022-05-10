@@ -7,10 +7,11 @@ import styles from './contact.module.css'
 
 export const Contact = () => {
     return (
-        <Container.Outer class={styles.outerContainer}>
+        <Container.Outer class={styles.outerContainer} id={sectionIDs.contact}>
             <Container.Inner>
-                <Container.Section id={sectionIDs.contact}>
+                <Container.Section>
                     <Heading.Section
+                        id={sectionIDs.contactHeading}
                         main={CONTACT_SECTION.main}
                         sub={CONTACT_SECTION.sub}
                     />

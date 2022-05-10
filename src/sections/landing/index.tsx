@@ -10,6 +10,17 @@ import styles from './landing.module.css'
 import { sectionIDs } from '../../constants/ids'
 import { HERO } from '../../constants/headings'
 
+const TagLineContainer = (props: { main: string; sub: string }) => {
+    return (
+        <div class={styles.taglineC}>
+            <div id={sectionIDs.tagline} class={styles.tagline}>
+                {props.main}
+            </div>
+            <div class={styles.taglinePara}>{props.sub}</div>
+        </div>
+    )
+}
+
 export const Landing = () => {
     let heroBoxRef: undefined | HTMLDivElement
 
@@ -43,12 +54,7 @@ export const Landing = () => {
                 <Container.Section class={styles.hero} id={sectionIDs.landing}>
                     <div class={styles.heroBox} ref={heroBoxRef}>
                         <div class={styles.heroMsgC}>
-                            <div class={styles.taglineC}>
-                                <div id="home-tagline" class={styles.tagline}>
-                                    {HERO.main}
-                                </div>
-                                <div class={styles.taglinePara}>{HERO.sub}</div>
-                            </div>
+                            <TagLineContainer main={HERO.main} sub={HERO.sub} />
                         </div>
                         <img
                             src={HeroImgPNG}
@@ -61,3 +67,5 @@ export const Landing = () => {
         </Container.Outer>
     )
 }
+
+Landing.TaglineContainer = TagLineContainer

@@ -6,7 +6,7 @@ import { MenuOverlay } from './menu-overlay'
 import styles from './menu.module.css'
 
 export const Menu = () => {
-    const [isOverlayOpen, setIsOverlayOpen] = createSignal(false)
+    const [isOverlayOpen, setIsOverlayOpen] = createSignal(true)
 
     const toggleOverlay = () => {
         setIsOverlayOpen(!isOverlayOpen())
@@ -24,7 +24,7 @@ export const Menu = () => {
                 {isOverlayOpen() ? 'Close' : 'Menu'}
             </button>
 
-            <MenuOverlay isOpen={isOverlayOpen} />
+            <MenuOverlay isOpen={isOverlayOpen} toggle={toggleOverlay} />
         </>
     )
 }

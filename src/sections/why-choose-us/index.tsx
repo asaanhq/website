@@ -11,6 +11,7 @@ export const WhyChooseUs = () => {
             <Container.Inner>
                 <Container.Section id={sectionIDs.whyChooseUs}>
                     <Heading.Section
+                        id={sectionIDs.whyChooseUsHeading}
                         main={WHY_CHOOSE_US_SECTION.main}
                         sub={WHY_CHOOSE_US_SECTION.sub}
                     />
