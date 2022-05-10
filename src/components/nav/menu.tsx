@@ -1,15 +1,12 @@
+import { createSignal } from 'solid-js'
 import clsx from 'clsx'
 
-import styles from './menu.module.css'
-import { Header } from '../header'
-import { Container } from '../container'
-import { createSignal, onMount } from 'solid-js'
 import { MenuOverlay } from './menu-overlay'
+
+import styles from './menu.module.css'
 
 export const Menu = () => {
     const [isOverlayOpen, setIsOverlayOpen] = createSignal(false)
-
-    let menuOverlayRef: undefined | HTMLDivElement
 
     const toggleOverlay = () => {
         setIsOverlayOpen(!isOverlayOpen())

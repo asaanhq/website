@@ -1,4 +1,4 @@
-import type { Component } from 'solid-js'
+import { Component } from 'solid-js'
 
 import { Container } from './components/container'
 
@@ -13,6 +13,7 @@ const App: Component = () => {
             <Container.Outer>
                 <Container.Inner>
                     <Landing />
+                    {/* <Container.Section /> */}
                 </Container.Inner>
             </Container.Outer>
         </div>
