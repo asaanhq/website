@@ -13,4 +13,9 @@
 
 .section {
     height: 100vh;
+    /* Height of header */
+    padding-top: 5rem;
+
+    /* Heigh of  bottom nav*/
+    padding-bottom: 5rem;
 }

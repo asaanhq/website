@@ -1,11 +1,11 @@
 import { onMount } from 'solid-js'
 
 import { Container } from '../../components/container'
-import { Header } from '../../components/header'
 
 import { debounce } from '../../utils/debounce'
 
-import HeroImg from '../../assets/png/business-deal.png'
+import HeroImgPNG from '../../assets/png/business-deal.png'
+
 import styles from './landing.module.css'
 
 export const Landing = () => {
@@ -33,24 +33,23 @@ export const Landing = () => {
 
     return (
         <Container.Section class={styles.hero}>
-            <Header />
             <div class={styles.heroBox} ref={heroBoxRef}>
                 <div class={styles.heroMsgC}>
                     <div class={styles.taglineC}>
-                        <div class={styles.tagline}>Business Made Easy.</div>
+                        <div id="home-tagline" class={styles.tagline}>
+                            Business Made Easy.
+                        </div>
                         <div class={styles.taglinePara}>
                             We strive to be a client obsessed company rather
                             than focusing on competition.
                         </div>
                     </div>
                 </div>
-                <div class={styles.heroImgC}>
-                    <img
-                        src={HeroImg}
-                        class={styles.heroImg}
-                        alt="Asaan's Making business deal easily."
-                    />
-                </div>
+                <img
+                    src={HeroImgPNG}
+                    class={styles.heroImg}
+                    alt="Asaan's Making business deal easily."
+                />
             </div>
         </Container.Section>
     )

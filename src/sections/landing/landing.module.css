@@ -43,6 +43,7 @@
 
 .heroImg {
     height: 100%;
-    width: 100%;
     object-fit: contain;
+    padding: 3rem;
+    width: 100%;
 }

@@ -4,30 +4,43 @@ import AsaanLogoLight from '../../assets/logo/light/asaan_logo_small.png'
 import AsaanLogoDark from '../../assets/logo/dark/asaan_logo_small.png'
 
 import styles from './header.module.css'
+import { Container } from '../container'
 
 export type THeaderProps = {
     isForLightBg?: boolean
+    isFixed?: boolean
+    hasBackground?: boolean
 }
 
+console.log(styles)
+
 export const Header = (props: THeaderProps) => {
-    const { isForLightBg = false } = props
+    const { isForLightBg = false, isFixed = true, hasBackground = true } = props
+
+    const LogoImg = isForLightBg ? AsaanLogoDark : AsaanLogoLight
+    console.log(isForLightBg, LogoImg)
 
     return (
-        <header
+        <Container.Outer
             class={clsx([
-                styles.header,
+                styles.container,
                 {
+                    [styles.fixed]: isFixed,
+                    [styles.background]: hasBackground,
                     [styles.light]: isForLightBg,
                     [styles.dark]: !isForLightBg,
                 },
             ])}
         >
-            <img
-                src={isForLightBg ? AsaanLogoDark : AsaanLogoLight}
-                alt="Asaan's Logo"
-                class={styles.logo}
-            />
-            <p class={styles.asaan}>Asaan Contracts Private Limited</p>
-        </header>
+            <Container.Inner
+                class={clsx(styles.header, {
+                    [styles.light]: isForLightBg,
+                    [styles.dark]: !isForLightBg,
+                })}
+            >
+                <img src={LogoImg} alt="Asaan's Logo" class={styles.logo} />
+                <p class={styles.asaan}>Asaan Contracts Private Limited</p>
+            </Container.Inner>
+        </Container.Outer>
     )
 }

@@ -47,11 +47,7 @@ export const MenuOverlay = (props: TMenuOverlayProps) => {
     return (
         <Portal>
             <div ref={menuOverlayRef} class={clsx([styles.menuOverlay])}>
-                <Container.Outer>
-                    <Container.Inner>
-                        <Header isForLightBg />
-                    </Container.Inner>
-                </Container.Outer>
+                <Header isForLightBg isFixed={false} hasBackground={false} />
             </div>
         </Portal>
     )
