@@ -12,13 +12,10 @@ export type THeaderProps = {
     hasBackground?: boolean
 }
 
-console.log(styles)
-
 export const Header = (props: THeaderProps) => {
     const { isForLightBg = false, isFixed = true, hasBackground = true } = props
 
     const LogoImg = isForLightBg ? AsaanLogoDark : AsaanLogoLight
-    console.log(isForLightBg, LogoImg)
 
     return (
         <Container.Outer
