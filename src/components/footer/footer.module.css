@@ -1,0 +1,21 @@
+.container {
+    align-items: center;
+    background-color: #222;
+    border-radius: 1rem;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 0.8rem;
+}
+
+.logo {
+    height: 2rem;
+    filter: brightness(0.5);
+}
+
+.inner {
+    padding: 0;
+}
