@@ -79,7 +79,7 @@ const menuItems: TMenuItem[] = [
     },
     {
         id: 'contact',
-        text: 'Contact',
+        text: 'Get in touch',
         link: `#${sectionIDs.contact}`,
         target: sectionIDs.contact,
         targetHeading: sectionIDs.contactHeading,

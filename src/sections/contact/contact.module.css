@@ -1,5 +1,52 @@
-.outerContainer {
-    background-image: linear-gradient(#222, #222);
-    background-repeat: no-repeat;
-    background-size: 50%;
+.section {
+    display: flex;
+}
+
+.section1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 {
+    flex: 1;
+}
+
+.maps {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(50%) invert(92%) contrast(80%);
+    border-radius: 1rem 1rem 1rem 0;
+    overflow: hidden;
+}
+
+.detailsContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.icon {
+    display: inline-flex;
+    margin-right: 1rem;
+}
+
+.text {
+    color: #aaa;
+}
+
+.iconText {
+    align-items: flex-start;
+    display: flex;
+    padding: 2rem;
+    background-color: #1f1f21;
+}
+
+.iconText:first-child {
+    border-top-left-radius: 1rem;
+}
+
+.iconText:last-child {
+    border-bottom-left-radius: 1rem;
 }
