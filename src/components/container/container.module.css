@@ -12,8 +12,7 @@
 }
 
 .section {
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
 
     /* Height of header */
     padding-top: 5.3125rem;
