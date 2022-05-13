@@ -29,7 +29,7 @@ export const drawBackground = () => {
     }
 
     // setting props
-    ctx.strokeStyle = '#e9e9e9'
+    ctx.strokeStyle = '#aaa'
     ctx.fillStyle = '#f0f0f0'
     ctx.lineWidth = 1
 

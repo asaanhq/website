@@ -1,11 +1,21 @@
 .canvas {
     position: absolute;
     top: 7rem;
-    left: 0;
+    left: 2rem;
     display: block;
 }
 
 .container {
     position: relative;
     z-index: 1;
+}
+
+.card {
+    max-width: 26rem;
+}
+
+.cardContainer {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,0 +1,24 @@
+.container {
+    background: #222;
+    border-radius: 1rem;
+    color: #aaa;
+    padding: 2rem;
+}
+
+.action {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-align: right;
+    color: #555;
+}
+
+.body {
+    padding-bottom: 3rem;
+}
+
+.avatar {
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 1rem;
+}
