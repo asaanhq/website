@@ -1,7 +1,7 @@
 .container {
-    background: #222;
+    background: var(--card-bg);
     border-radius: 1rem;
-    color: #aaa;
+    color: var(--neutral-1);
     padding: 2rem;
 }
 
@@ -10,7 +10,7 @@
     font-size: 0.8rem;
     font-weight: 800;
     text-align: right;
-    color: #555;
+    color: var(--neutral-3);
 }
 
 .body {
