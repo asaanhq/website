@@ -15,7 +15,6 @@
 .maps {
     height: 100%;
     width: 100%;
-    filter: grayscale(50%) invert(92%) contrast(80%);
     border-radius: 1rem 1rem 1rem 0;
     overflow: hidden;
 }
