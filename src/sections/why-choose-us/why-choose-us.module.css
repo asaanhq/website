@@ -1,0 +1,41 @@
+.canvas {
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+    display: block;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    padding: 3rem 0;
+}
+
+.card {
+    max-width: 35rem;
+    justify-self: end;
+}
+
+.card:nth-child(2n) {
+    justify-self: start;
+}
+
+.cardBody {
+    display: flex;
+    padding-bottom: 0;
+}
+
+.cardNumber {
+    font-size: 15rem;
+    font-weight: 800;
+    color: var(--neutral-invert-1);
+    line-height: 0.8;
+}
+
+.cardText {
+    padding-top: 2rem;
+    flex: 1;
+    margin-left: -2rem;
+}
