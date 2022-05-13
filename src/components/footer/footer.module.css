@@ -1,6 +1,6 @@
 .container {
     align-items: center;
-    background-color: #222;
+    /* background-color: #222; */
     border-radius: 1rem;
     color: #999;
     display: flex;
